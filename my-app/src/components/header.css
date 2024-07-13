@@ -1,44 +1,89 @@
-body {
+*{
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
 }
 
-.header {
-    height: 100px;
+.header-warp {
+    height: 72px;
     width: 100%;
+    display: block;
+    background-color: rgb(30, 41, 59);
+}
+.header{
+    height: 100%;
+    padding: 0 200px 0 200px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: #333;
-    padding: 0 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
 .logo {
+    display: flex;
+    width: 20%;
     height: 100%;
-    width: 200px;
+    align-items: center;
+    padding-left: 20px;
+}
+.logo-text{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .logo img {
-    height: 100%;
-    width: auto;
+    height: 70%;
+    
 }
+.menu{
+    height: 70%;
+    width: 35%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
 .menu ul {
+
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.menu li {
-    margin-right: 20px;
-    color: white;
+.menu li{
+    margin:0;
+    padding: 0;
+}
+.menu li a{
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    justify-self: right;
+    margin-right: 32px;
+    color: rgb(55, 65, 81);
+    font-style: none;
     cursor: pointer;
     transition: color 0.3s;
+
 }
 
-.menu li:hover {
-    color: #ff6347;
+.menu li a:hover {
+    color: skyblue;
 }
+.profile{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
+}
+.profile-icon{
+    height: 36px;
+    width: 36px;
+}
