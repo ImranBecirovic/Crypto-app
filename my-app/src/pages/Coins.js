@@ -1,10 +1,10 @@
 import Header from '../components/header.js';
 
-function Aboutus() {
+function Coins() {
     return (<>
       <Header/>
-      <h1>About us</h1>
+      <h1>Coins</h1>
       </>);
   }
   
-  export default Aboutus;
+  export default Coins;

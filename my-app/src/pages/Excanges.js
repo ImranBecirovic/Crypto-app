@@ -1,10 +1,10 @@
 import Header from '../components/header.js';
 
-function Aboutus() {
+function Excanges() {
     return (<>
       <Header/>
-      <h1>About us</h1>
+      <h1>Excanges</h1>
       </>);
   }
   
-  export default Aboutus;
+  export default Excanges;
