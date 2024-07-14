@@ -16,17 +16,16 @@ const CryptoList = () => {
 
   return (
     <div className="crypto-page">
-      <div></div>
+      <div>
+
+      </div>
       <h1>Crypto List</h1>
       <ul>
         {cryptoData.map((coin) => (
           <li key={coin.id}>
-            {coin.icon} -
-            {coin.name} -
-            {coin.symbol} -
-            {coin.price} -
-            {coin.change} -
-            -{coin.rank} -
+            {coin.icon} 
+            {coin.name} - {coin.symbol} - {coin.price} - {coin.change}
+            {coin.rank}
           </li>
         ))}
       </ul>
