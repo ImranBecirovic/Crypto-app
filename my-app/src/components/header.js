@@ -14,7 +14,6 @@ export default function Header() {
                     <ul>
                          <li><Link to="/">Home</Link></li>
                          <li><Link to="/coins">Coins</Link></li>
-                         <li><Link to="/excanges">Exchange</Link></li>
                          <li><Link to="/about-us">About us</Link></li>
                          <li><Link to="/favourite"><svg fill="red" height="22px" width="22px" version="1.1" id="Capa_1"  
 	 viewBox="0 0 471.701 471.701" >
