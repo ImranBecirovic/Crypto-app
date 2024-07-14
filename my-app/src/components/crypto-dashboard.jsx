@@ -21,7 +21,8 @@ const CryptoList = () => {
       <h1>Crypto List</h1>
       <ul>
         {cryptoData.map((coin) => (
-          <li key={coin.id}>{coin.name}</li>
+          <li key={coin.id}>{coin.name} {coin.price} </li>
+          
         ))}
       </ul>
     </div>

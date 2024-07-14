@@ -5,7 +5,7 @@ function Home() {
     return (<>
       <Header/>
       <CryptoList />
-      <h1>Home</h1>
+      
       </>);
   }
   
