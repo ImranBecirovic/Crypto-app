@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import "./crypto-dashboard.css"
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import "./crypto-dashboard.css";
 
 const CryptoList = () => {
   const [cryptoData, setCryptoData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get(
-        'https://api.coinranking.com/v2/coins'
-      );
+      const response = await axios.get("https://api.coinranking.com/v2/coins");
       setCryptoData(response.data.data.coins);
     };
 
@@ -17,11 +15,19 @@ const CryptoList = () => {
   }, []);
 
   return (
-    <div>
+    <div className="crypto-page">
+      <div></div>
       <h1>Crypto List</h1>
       <ul>
         {cryptoData.map((coin) => (
-          <li key={coin.id}>{coin.name} {coin.price} </li> 
+          <li key={coin.id}>
+            {coin.icon} -
+            {coin.name} -
+            {coin.symbol} -
+            {coin.price} -
+            {coin.change} -
+            -{coin.rank} -
+          </li>
         ))}
       </ul>
     </div>
